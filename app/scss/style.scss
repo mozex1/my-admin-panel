@@ -1,0 +1,54 @@
+@import "../../node_modules/uikit/src/scss/variables-theme.scss";
+@import "../../node_modules/uikit/src/scss/mixins-theme.scss";
+@import "../../node_modules/uikit/src/scss/uikit-theme.scss";
+@import '../../node_modules/react-toastify/scss/main.scss';
+@import '../src/components/spinner/spinner.scss';
+@import '../src/components/modal/modal.scss';
+
+$panel_height: 64px;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+iframe {
+    position: absolute;
+    top: $panel_height;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - #{$panel_height});
+}
+
+.panel {
+    display: flex;
+    justify-content: flex-end;
+    padding: 12px;
+    height: $panel_height;
+}
+
+.login-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(black, .5);
+    z-index: 2;
+
+    .login {
+        width: 600px;
+        padding: 30px;
+        background-color: #fff;
+        border-radius: 4px;
+    }
+
+    .login-error {
+        display: block;
+        color: red;
+        margin-top: 10px;
+    }
+}
