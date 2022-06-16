@@ -10,4 +10,7 @@
                  <li>Уведомления с помощью React-toastify</li>
 </ul>
 
-<img align="center" src="https://media.giphy.com/media/GVUVvPHiBPaZty5jRh/giphy.gif" />
+<div align="center">
+  <img align="center" src="https://media.giphy.com/media/GVUVvPHiBPaZty5jRh/giphy.gif" />
+</div>
+
